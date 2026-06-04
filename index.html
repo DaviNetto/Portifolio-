@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Universo Digital</title>
+    <link rel="stylesheet" href="porti.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-logo">Davi.Dev</div>
+        <div class="nav-links">
+            <a href="#projetos">Projetos</a>
+            <a href="#flashcards">Interativo</a>
+            <a href="cadastro.html" class="nav-btn-cadastro">Acessar Cadastro</a>
+            <a href="#termosuso">Termos de Uso</a>
+        </div>
+    </nav>
+
+    <header class="hero-section">
+        <div class="hero-container">
+            
+            <div class="hero-profile">
+                <img src="Fotoporti.jpg" alt="Foto de Perfil do Davi" class="profile-img">
+            </div>
+
+            <div class="hero-content">
+                <h1>Bem-vindo ao Meu <span class="gradient-text">Universo Digital</span></h1>
+                <p>Explorando os limites do Desenvolvimento, Game Design e Identidade Visual.</p>
+                
+                <div class="social-links">
+                    <a href="https://github.com/DaviNetto/Cadastro" target="_blank" class="social-icon" title="GitHub">💻 GitHub</a>
+
+                    <a href="https://br.linkedin.com/" target="_blank" class="social-icon" title="LinkedIn">👔 LinkedIn</a>
+
+                    <a href="https://www.instagram.com/davinetto082/" target="_blank" class="social-icon" title="Instagram">📸 Instagram</a>
+                </div>
+
+                <a href="#projetos" class="btn-portfolio">Explorar Projetos</a>
+            </div>
+
+        </div>
+    </header>
+
+    <section class="about-section">
+        <div class="about-container">
+            <h2 class="about-title">Sobre o Meu Trabalho</h2>
+            <p class="about-text">
+                Sou um desenvolvedor multidisciplinar com foco na criação de soluções digitais completas. No desenvolvimento web, utilizo Python, HTML5 e CSS para estruturar desde plataformas dinâmicas até projetos interativos e documentários na web. No design gráfico, construo identidades visuais, branding e vetorizações precisas usando ferramentas como o Adobe Illustrator. Além disso, aplico meus conhecimentos em física e lógica no Game Design, desenvolvendo mecânicas e simulações imersivas. Meu objetivo é unir infraestrutura robusta, código limpo e uma estética marcante em cada projeto que desenvolvo.
+            </p>
+        </div>
+    </section>
+
+    <main id="projetos" class="main-container">
+        <h2 class="section-title">Projetos em Destaque</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="card-icon">💻</div>
+                <h3>Desenvolvimento Web</h3>
+                <p>Criação de plataformas dinâmicas, sistemas de gestão integrados e soluções back-end completas.</p>
+                <div class="tech-tags">
+                    <span>HTML5</span>
+                    <span>CSS3</span>
+                    <span>Python</span>
+                </div>
+                <a href="#" class="btn-card">Ver Detalhes</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-icon">🎮</div>
+                <h3>Game Design</h3>
+                <p>Desenvolvimento de mundos virtuais interativos, mecânicas imersivas e simulações físicas customizadas.</p>
+                <div class="tech-tags">
+                    <span>Logic</span>
+                    <span>Physics</span>
+                    <span>UI/UX</span>
+                </div>
+                <a href="#" class="btn-card">Explorar Mapa</a>
+            </div>
+
+            <div class="project-card">
+                <div class="card-icon">🎨</div>
+                <h3>Design Gráfico</h3>
+                <p>Construção de identidades visuais marcantes, branding digital, logotipos corporativos e vetorização.</p>
+                <div class="tech-tags">
+                    <span>Illustrator</span>
+                    <span>Branding</span>
+                    <span>Canva</span>
+                </div>
+                <a href="#" class="btn-card">Ver Portfólio</a>
+            </div>
+        </div>
+    </main>
+
+    <section id="flashcards" class="flashcard-section">
+        <h2 class="section-title">Conhecimento Interativo</h2>
+        <p class="section-subtitle">Clique no card abaixo para revelar os detalhes técnicos dos bastidores.</p>
+        
+        <div class="flashcard-container" onclick="this.querySelector('.card-flip').classList.toggle('flipped')">
+            <div class="card-flip">
+                <div class="card-face card-front">
+                    <div class="face-content">
+                        <span class="badge">Stack Atual</span>
+                        <h2>Desenvolvimento Web</h2>
+                        <p>Toque para virar e ver a arquitetura do sistema.</p>
+                    </div>
+                </div>
+                <div class="card-face card-back">
+                    <div class="face-content">
+                        <h2>Arquitetura do Projeto</h2>
+                        <p>Plataformas robustas integrando interfaces semânticas modernas no front-end com estruturas ágeis de bancos de dados e lógica estruturada no back-end.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="interactive-controls">
+            <div class="progress-indicator">Card 1 de 8</div>
+            <div class="btn-group">
+                <button class="btn-nav" onclick="event.stopPropagation(); prevCard()">Anterior</button>
+                <button class="btn-nav" onclick="event.stopPropagation(); nextCard()">Próximo</button>
+            </div>
+            <a href="#termosuso">Termos de Uso</a>
+        </div>
+    </section>
+    <footer class="main-footer">
+        <p>&copy; 2026 Davi — Todos os direitos reservados.</p>
+        <div class="footer-links">
+            <a href="#privacidade" class="nav-btn-privacidade">Política de Privacidade</a>
+        </div>
+    </footer>
+
+</body>
+</html>
